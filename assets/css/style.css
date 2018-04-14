@@ -574,7 +574,11 @@ div.bottom {
 
 }
 
-/*footer*/
+.graybox { 
+padding: 30px 10px;
+}
+
+/*footer for index*/
 
 div#footer {   
    position:absolute;
@@ -782,8 +786,9 @@ a.increase-size:hover {
   .timeline-body > p {
 
     font-size: 12px;
-    text-align: center;
-
+    letter-spacing: -1px;
+    word-spacing: -1px;
+    
   }
 
   div > p.mbr-txt {
@@ -814,9 +819,37 @@ a.increase-size:hover {
 /*breakpoint specific to iphone 4 horizontal*/
 
 @media only screen and (max-width: 480px) and (max-height: 320px) {
+
   .thumbnail img {
     height: 287px;
     width: 100%;
+  }
+
+  .main-header {
+
+    position: fixed;
+    top: 61%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center; 
+  }
+
+  .btn-container {
+
+    position: fixed;
+    top: 78%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center; 
+  }
+
+  .placeholder {
+
+    visibility: hidden;
+    display: none;
+  }
 }
 
 /*breakpoint specific to iphone 4 vertical*/

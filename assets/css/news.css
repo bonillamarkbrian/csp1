@@ -147,6 +147,10 @@ p.subhead {
 
 /*footer style*/
 
+.graybox { 
+padding: 30px 10px;
+}
+
 div.bottom {
 
   background-color: #202020;

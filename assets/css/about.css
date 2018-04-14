@@ -1,4 +1,4 @@
-*{
+* {
 	box-sizing: border-box;
 	padding: 0;
 	margin: 0;
@@ -217,9 +217,11 @@ p.title {
   
 }
 
-
-
 /*footer style*/
+
+.graybox { 
+padding: 30px 10px;
+}
 
 div.bottom {
 
@@ -268,7 +270,6 @@ div.space-img {
   
 }
 
-
 /*tablet*/
 
 @media only screen and (max-width: 800px) {
@@ -277,8 +278,6 @@ div.space-img {
 
     margin-bottom: 25px; /*set margin bottom when in mobile view*/
   }
-  
-
 }
 
 /*mobile*/

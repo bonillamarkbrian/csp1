@@ -1,0 +1,507 @@
+*{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+  
+    background-color: black;
+    color: #fcfcfc;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
+    line-height: 20px;
+    font-size: 14px;
+}
+
+h2 {
+  color: white !important;
+}
+
+
+@font-face{
+    font-family: "WarnockPro-Light";
+    src: url('../css/fonts/WarnockPro-Light.otf'),
+ 
+}
+
+/*Navigation css*/
+
+.navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+
+.font-inc {
+
+    font-size: 17px; /*override body font size and style*/
+    font-family: 'Lato', sans-serif;
+}
+
+/*drop down menu*/
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.season-set {
+
+    background-color: #f8f8f8; 
+    color: #777; 
+    text-align: center; 
+    padding: 12px; 
+    text-decoration: none; 
+    border: transparent; 
+    font-size: 17px;
+    font-family: 'Lato', sans-serif;
+}
+
+a.subscription {
+
+  font-size: 14px; /*set smaller size for the subscription link*/
+}
+
+#intro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 85vh;    
+}
+
+#intro header {
+    position: relative;
+    text-align: center;
+    /*z-index: 2;*/
+}
+
+.main-header {
+
+    position: relative;
+    padding: 20px 20px;
+
+}
+
+.icon {
+	text-align: center;
+}
+
+.main-header h2 {
+
+    margin-left: 2px;
+    font-size: 50px;
+    line-height: 0.5;
+    letter-spacing: 0.2px;
+    backface-visibility: hidden;
+    transition: all 1s ease;
+    color: #F8F8F8; 
+    font-family: 'WarnockPro-Light';
+    text-decoration: white;
+
+}
+
+div.hline {
+
+    padding: 20px 10px; 
+    width: 100%; 
+    border-bottom: 0.5px solid white;
+
+}
+
+div.btn-container {
+
+    padding: 20px 2px;
+
+}
+
+/*.small-tv {
+
+	margin: 30px -10px 0;
+
+	border: 1px solid white;
+	background-color: : black;
+	opacity: 0.8px;
+}*/
+
+.placeholder {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h3 {
+
+    color white;
+}
+
+
+p {
+
+    padding: 0;
+    margin: 0;
+}
+
+/*Logo container*/
+
+.img-container {
+
+    height: 50px;
+    width: 85px;
+    position: relative;
+    overflow: hidden;    
+}
+
+.img-container > img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 100%;
+}
+
+/*
+ *
+ * snowflake effects
+ *
+ */
+
+ #snowflakeContainer {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+.snowflake {
+    padding-left: 15px;
+    font-family: Cambria, Georgia, serif;
+    /*font-size: 14px;
+    line-height: 24px;*/
+    font-size: 2px;
+    line-height: 2px;
+    position: fixed;
+    color: #D3D3D3; /*light gray*/
+    user-select: none;
+    z-index: 1000;
+    opacity: 0.5;
+}
+.snowflake:hover {
+    cursor: default;
+}
+
+
+/*CSS for the banner*/
+
+#wrapper {
+    width: 100%;
+    overflow: hidden;
+}
+
+#container {
+    width: 100%;
+    margin: 0 auto;
+}
+.banner-img {
+
+    width: 100%;
+}
+
+/*end of banner css*/
+
+p.txt-desc {
+padding:3px 2px
+}
+
+.thumbnail img {
+
+    height: 250px; /*set same height for the images*/
+    width: 100%;
+   
+}
+
+.thumbnail {
+    position: relative;
+    margin:0;
+    padding: 0;
+    border: 2px solid gray;
+}
+
+/* The overlay effect - lays on top of the container and over the image */
+.overlay {
+  position: absolute; 
+  bottom: 0; 
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1; 
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.thumbnail:hover .overlay {
+  opacity: 1;
+}
+
+/*singlebutton - index*/
+
+.singlebutton {
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  text-align: center;
+  font-size: 18px;
+  padding: 5px;
+  width: 150px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 2px;
+}
+
+.singlebutton span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.singlebutton span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.singlebutton:hover span {
+  padding-right: 25px;
+}
+
+.singlebutton:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.singlebutton a {
+    color: white;
+}
+
+/*about us style*/
+
+.center-block {
+
+  margin-left: 10%;
+}
+
+h1.white-align-center {
+
+  text-align: center;
+  color: white;
+}
+
+h1.mbr-bold {
+
+  font-weight: 700;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.mbr-text {
+
+  color: white;
+  line-height: 1.6;
+}
+
+.card {
+
+  text-align: center;
+}
+.team {
+
+  margin-bottom: 50px; 
+}
+
+hr.style11 {
+  height: 6px;
+  background: url(http://ibrahimjabbari.com/english/images/hr-11.png) repeat-x 0 0;
+    border: 0;
+}
+
+div#sub-head {
+  text-align: center; /*align center contact text*/
+}
+
+
+.form-horizontal {
+
+  padding: 24px 5px;
+  margin-left: 15px;
+}
+
+div > input[class="form-control"] {
+
+  width: 280px;
+}
+
+
+div > textarea[class="form-control"] {
+
+  width: 280px;
+  height: 200px;
+
+}
+
+
+
+
+h4.mbr-fonts {
+
+  color: white;
+}
+
+h4.card-title {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+div.dev-image {
+
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+
+}
+
+.avatar {
+
+    border-radius: 50%;
+    max-height: 100%;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+}
+
+
+
+p.title {
+
+  padding-bottom: 5px;
+  color: lightblue;
+}
+
+.mbr-desc {
+
+  padding: 3px 5px;
+  
+}
+
+
+
+/*footer style*/
+
+div.bottom {
+
+  background-color: #202020;
+
+}
+
+/*footer style*/
+
+
+a.increase-size{
+
+    font-size: 30px;
+    color: white;
+}
+
+a.increase-size:hover {
+
+    color: orange;
+}
+
+.disclaimer{
+
+    text-align: center;
+    color: black;
+    background: white;
+}
+
+p.disclaim {
+
+    font-size:10px; 
+    text-align: center;
+}
+
+/*Media query*/
+
+
+/*desktop*/
+
+@media only screen and (max-width: 1024px) {
+
+div.space-img {
+
+  margin-top: 15px; 
+}
+  
+}
+
+
+/*tablet*/
+
+@media only screen and (max-width: 800px) {
+
+  div.card {
+
+    margin-bottom: 25px; /*set margin bottom when in mobile view*/
+  }
+  
+
+}
+
+/*mobile*/
+
+@media only screen and (max-width: 320px) {
+  
+  div.card {
+
+    margin-bottom: 18px; /*set margin bottom when in mobile view*/
+  }
+
+  div > p.mbr-txt {
+
+    font-size: 12px; /*set font size for footer in mobile devices*/
+
+  }
+
+  div.mbr-bottom {
+
+    margin-bottom: 30px; /*set margin bottom*/
+  }
+
+}
+

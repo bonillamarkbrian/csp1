@@ -1,0 +1,250 @@
+*{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+  
+    background-color: black;
+    color: #fcfcfc;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
+    line-height: 20px;
+    font-size: 14px;
+}
+
+
+@font-face{
+    font-family: "WarnockPro-Light";
+    src: url('../css/fonts/WarnockPro-Light.otf'),
+ 
+}
+
+/*Navigation css*/
+
+.navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+
+.font-inc {
+
+    font-size: 17px; /*override body font size and style*/
+    font-family: 'Lato', sans-serif;
+}
+
+/*drop down menu*/
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.season-set {
+
+    background-color: #f8f8f8; 
+    color: #777; 
+    text-align: center; 
+    padding: 12px; 
+    text-decoration: none; 
+    border: transparent; 
+    font-size: 17px;
+    font-family: 'Lato', sans-serif;
+}
+
+a.subscription {
+
+  font-size: 14px;
+}
+
+
+/*Logo container*/
+
+.img-container {
+
+    height: 50px;
+    width: 85px;
+    position: relative;
+    overflow: hidden;    
+}
+
+.img-container > img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 100%;
+}
+
+/*CSS for the banner*/
+
+#wrapper {
+    width: 100%;
+    overflow: hidden;
+}
+
+#container {
+    width: 100%;
+    margin: 0 auto;
+}
+.banner-img {
+
+    width: 100%;
+}
+
+/*end of banner css*/
+
+p.txt-desc {
+padding:3px 2px
+}
+
+.thumbnail img {
+
+    height: 250px; /*set same height for the images*/
+    width: 100%;
+   
+}
+
+.thumbnail {
+    position: relative;
+    margin:0;
+    padding: 0;
+    border: 2px solid gray;
+}
+
+/* news style*/
+
+.text-muted {
+    color: white!important;
+}
+.h3, h3 {
+    font-size: 1.75rem;
+}
+
+/*jumbotron*/
+
+div.jumbotron {
+
+  /*background-image: url('assets/img/wallpaper.png')*/
+  background-color: #ffc966;
+}
+
+.display-3 {
+    font-size: 4.5rem;
+    font-weight: 300;
+    line-height: 1.1;
+    font-color: white;
+}
+
+.lead {
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+
+p.subhead {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color:white;
+}
+
+.marketing {
+    margin: 3rem 0;
+}
+
+
+/*footer style*/
+
+div.bottom {
+
+  background-color: #202020;
+
+}
+
+a.increase-size{
+
+    font-size: 30px;
+    color: white;
+}
+
+a.increase-size:hover {
+
+    color: orange;
+}
+
+.disclaimer{
+
+    text-align: center;
+    color: black;
+    background: white;
+}
+
+p.disclaim {
+
+    font-size:10px; 
+    text-align: center;
+}
+
+
+
+/*Media query*/
+
+
+/*desktop*/
+
+@media only screen and (max-width: 1024px) {
+
+ 
+}
+
+
+/*tablet*/
+
+@media only screen and (max-width: 800px) {
+  
+  div.bottom-pad {
+
+    margin-bottom: 20px;
+  }
+
+}
+
+/*mobile*/
+
+@media only screen and (max-width: 320px) {
+  
+  div > p.mbr-txt {
+
+    font-size: 12px; /*set font size for mobile devices*/
+
+  }
+
+  div.mbr-bottom {
+
+    margin-bottom: 30px; /*set margin bottom*/
+  }
+
+}
+
+
+

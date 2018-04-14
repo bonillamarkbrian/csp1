@@ -1,0 +1,245 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  
+    background-color: black;
+    color: #fcfcfc;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
+    line-height: 20px;
+    font-size: 14px;
+}
+
+
+@font-face{
+    font-family: "WarnockPro-Light";
+    src: url('../css/fonts/WarnockPro-Light.otf'),
+ 
+}
+
+/*Navigation css*/
+
+.navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+
+.font-inc {
+
+    font-size: 17px; /*override body font size and style*/
+    font-family: 'Lato', sans-serif;
+}
+
+/*drop down menu*/
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.season-set {
+
+    background-color: #f8f8f8; 
+    color: #777; 
+    text-align: center; 
+    padding: 12px; 
+    text-decoration: none; 
+    border: transparent; 
+    font-size: 17px;
+    font-family: 'Lato', sans-serif;
+}
+
+a.subscription {
+
+  font-size: 14px;
+}
+
+
+/*Logo container*/
+
+.img-container {
+
+    height: 50px;
+    width: 85px;
+    position: relative;
+    overflow: hidden;    
+}
+
+.img-container > img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 100%;
+}
+
+/*Image Gallery CSS starts here*/
+
+h1.white-align-center {
+
+  text-align: center;
+  color: white;
+}
+
+h1.mbr-bold {
+
+  font-weight: 700;
+}
+
+.space {
+
+  margin-bottom: 20px;
+}
+
+.image img {
+
+    height: 204px; /*set same height for the images*/
+    width: 100%;
+    overflow: hidden;
+
+   
+}
+
+.image {
+    
+    margin:0 10px;
+    padding: 0;
+    border: 2px solid gray;
+}
+
+.heading {
+    font-size: 15px;
+    color: white;
+
+   /* margin-right: 25px;*/
+}
+
+p.head {
+
+    padding: 3px 2px;
+}
+
+p.rating {
+
+    color: white;
+    padding-bottom: 20px;
+    font-size: 12px;
+}
+
+.checked {
+    color: orange;
+}
+
+
+
+/*footer style*/
+
+div.bottom {
+
+  background-color: #202020;
+
+}
+
+a.increase-size{
+
+    font-size: 30px;
+    color: white;
+}
+
+a.increase-size:hover {
+
+    color: orange;
+}
+
+.disclaimer{
+
+    text-align: center;
+    color: black;
+    background: white;
+}
+
+p.disclaim {
+
+    font-size:10px; 
+    text-align: center;
+}
+
+
+/*Media query*/
+
+
+/*desktop*/
+
+@media only screen and (max-width: 1024px) {
+
+  .image img {
+    height: 166px;
+    width: 100%;
+    overflow: hidden;
+  }
+}
+
+
+/*tablet*/
+
+@media only screen and (max-width: 800px) {
+  
+  .image img {
+    height: 205px;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  div > p.mbr-txt {
+
+    font-size: 13px; /*set font size for mobile devices*/
+
+  }
+
+}
+
+/*mobile*/
+
+@media only screen and (max-width: 320px) {
+  
+  .image img {
+    height: 166px;
+    width: 100%;
+    overflow: hidden;
+  }
+
+   div > p.mbr-txt {
+
+    font-size: 12px; /*set font size for mobile devices*/
+
+  }
+
+  div.mbr-bottom {
+
+    margin-bottom: 30px;
+}
+

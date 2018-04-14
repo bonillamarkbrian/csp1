@@ -21,6 +21,12 @@ body {
  
 }
 
+p {
+
+    padding: 0;
+    margin: 0;
+}
+
 /*Navigation css*/
 
 .navbar {
@@ -99,6 +105,20 @@ a.subscription {
 
 /*Image Gallery CSS starts here*/
 
+.pagination a {
+    color: white;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.pagination a.active {
+    background-color: orange;
+    color: white;
+}
+
+.pagination a:hover:not(.active) {color: orange;}
+
 h1.white-align-center {
 
   text-align: center;
@@ -119,9 +139,7 @@ h1.mbr-bold {
 
     height: 204px; /*set same height for the images*/
     width: 100%;
-    overflow: hidden;
-
-   
+    overflow: hidden;  
 }
 
 .image {
@@ -155,35 +173,28 @@ p.rating {
 }
 
 
-
 /*footer style*/
 
 div.bottom {
-
   background-color: #202020;
-
 }
 
 a.increase-size{
-
     font-size: 30px;
     color: white;
 }
 
 a.increase-size:hover {
-
     color: orange;
 }
 
 .disclaimer{
-
     text-align: center;
     color: black;
     background: white;
 }
 
 p.disclaim {
-
     font-size:10px; 
     text-align: center;
 }
@@ -224,7 +235,7 @@ p.disclaim {
 
 /*mobile*/
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 600px) {
   
   .image img {
     height: 166px;
@@ -232,7 +243,10 @@ p.disclaim {
     overflow: hidden;
   }
 
-   div > p.mbr-txt {
+   
+   /*footer*/ 
+
+  div > p.mbr-txt {
 
     font-size: 12px; /*set font size for mobile devices*/
 
@@ -240,6 +254,23 @@ p.disclaim {
 
   div.mbr-bottom {
 
-    margin-bottom: 30px;
+    margin-bottom: 30px; /*set margin bottom*/
+  }
+
+  p.disclaim {
+    font-size: 9px;
+    text-align: center;
+  }
+
+}
+
+/*iphone 4 tilted*/
+
+@media only screen and (max-width: 480px) and (max-height: 320px) {
+  .image img {
+    height: 230px;
+    width: 100%;
+    overflow: hidden;
+  }
 }
 

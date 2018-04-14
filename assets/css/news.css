@@ -21,6 +21,12 @@ body {
  
 }
 
+p {
+
+    padding: 0;
+    margin: 0;
+}
+
 /*Navigation css*/
 
 .navbar {
@@ -97,41 +103,6 @@ a.subscription {
     width: 100%;
 }
 
-/*CSS for the banner*/
-
-#wrapper {
-    width: 100%;
-    overflow: hidden;
-}
-
-#container {
-    width: 100%;
-    margin: 0 auto;
-}
-.banner-img {
-
-    width: 100%;
-}
-
-/*end of banner css*/
-
-p.txt-desc {
-padding:3px 2px
-}
-
-.thumbnail img {
-
-    height: 250px; /*set same height for the images*/
-    width: 100%;
-   
-}
-
-.thumbnail {
-    position: relative;
-    margin:0;
-    padding: 0;
-    border: 2px solid gray;
-}
 
 /* news style*/
 
@@ -146,8 +117,9 @@ padding:3px 2px
 
 div.jumbotron {
 
-  /*background-image: url('assets/img/wallpaper.png')*/
-  background-color: #ffc966;
+  background-image: url('../img/crow.jpg');
+  background-repeat: no-repeat;
+
 }
 
 .display-3 {
@@ -231,7 +203,7 @@ p.disclaim {
 
 /*mobile*/
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 600px) {
   
   div > p.mbr-txt {
 
@@ -242,6 +214,11 @@ p.disclaim {
   div.mbr-bottom {
 
     margin-bottom: 30px; /*set margin bottom*/
+  }
+
+  p.disclaim {
+    font-size: 9px;
+    text-align: center;
   }
 
 }

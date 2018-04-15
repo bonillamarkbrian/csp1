@@ -283,10 +283,20 @@ div.space-img {
 /*mobile*/
 
 @media only screen and (max-width: 600px) {
+
+  .avatar {
+
+    max-width: 52%;
+  }
   
   div.card {
 
     margin-bottom: 18px; /*set margin bottom when in mobile view*/
+  }
+
+  .form-horizontal .form-group {
+    margin-right: 0px;
+    margin-left: 0px;
   }
 
   /*footer*/

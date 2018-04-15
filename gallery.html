@@ -21,9 +21,103 @@
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+  <!-- Import Favicon -->
+
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+
   <!-- Import custom style sheet -->
 
   <link rel="stylesheet" type="text/css" href="assets/css/gallery.css">
+
+  <style>
+
+  img#myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {    
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}
+</style>
   
 </head>
 
@@ -89,7 +183,7 @@
      <div class="col-sm-6 col-md-4">
         <div class="image">
            <div class="hovereffect">
-             <img src="assets/img/jonsnow.jpeg" class="img-responsive" style="width:100%" alt="jonsnow">
+             <img src="assets/img/jonsnow.jpeg" class="img-responsive" alt="jonsnow">
                 <div class="overlay">
                   <h2>Share</h2>
                     <p class="set1">
@@ -124,7 +218,7 @@
     <div class="col-sm-6 col-md-4">
         <div class="image"> 
             <div class="hovereffect">
-             <img src="assets/img/daenerys.jpg" class="img-responsive" style="width:100%" alt="daenerys">
+             <img src="assets/img/daenerys.jpg" class="img-responsive" alt="daenerys">
                 <div class="overlay">
                   <h2>Share</h2>
                     <p class="set1">
@@ -159,7 +253,7 @@
      <div class="col-sm-6 col-md-4"> 
         <div class="image"> 
           <div class="hovereffect">
-            <img src="assets/img/daenerys2.jpg" class="img-responsive" style="width:100%" alt="daenerys2">
+            <img src="assets/img/daenerys2.jpg" class="img-responsive" alt="daenerys2">
               <div class="overlay">
                   <h2>Share</h2>
                     <p class="set1">
@@ -195,7 +289,7 @@
     <div class="col-sm-6 col-md-4">
         <div class="image"> 
           <div class="hovereffect">
-             <img src="assets/img/arya2.jpeg" class="img-responsive" style="width:100%" alt="arya">
+             <img src="assets/img/arya2.jpeg" class="img-responsive" alt="arya">
                 <div class="overlay">
                   <h2>Share</h2>
                     <p class="set1">
@@ -230,7 +324,7 @@
      <div class="col-sm-6 col-md-4"> 
         <div class="image"> 
           <div class="hovereffect">
-            <img src="assets/img/sansa2.jpg" class="img-responsive" style="width:100%" alt="sansa">
+            <img src="assets/img/sansa2.jpg" class="img-responsive" alt="sansa">
                 <div class="overlay">
                   <h2>Share</h2>
                     <p class="set1">
@@ -265,7 +359,7 @@
     <div class="col-sm-6 col-md-4">
         <div class="image">
           <div class="hovereffect">
-             <img src="assets/img/nightking.jpg" class="img-responsive" style="width:100%" alt="whitewalker">
+             <img src="assets/img/nightking.jpg" class="img-responsive" alt="whitewalker">
                 <div class="overlay">
                   <h2>Share</h2>
                     <p class="set1">
@@ -301,7 +395,7 @@
     <div class="col-sm-6 col-md-4">
         <div class="image">
           <div class="hovereffect"> 
-             <img src="assets/img/tyrion.jpg" class="img-responsive" style="width:100%" alt="tyrion">
+             <img src="assets/img/tyrion.jpg" class="img-responsive" alt="tyrion">
                 <div class="overlay">
                   <h2>Share</h2>
                     <p class="set1">
@@ -336,7 +430,7 @@
      <div class="col-sm-6 col-md-4"> 
         <div class="image"> 
           <div class="hovereffect">
-            <img src="assets/img/slide5.jpg" class="img-responsive" style="width:100%" alt="gamesofthrones">
+            <img src="assets/img/slide5.jpg" class="img-responsive" alt="gamesofthrones">
                 <div class="overlay">
                   <h2>Share</h2>
                     <p class="set1">
@@ -371,7 +465,7 @@
     <div class="col-sm-6 col-md-4"> 
         <div class="image"> 
           <div class="hovereffect">
-            <img src="assets/img/ned2.jpg" class="img-responsive" style="width:100%" alt="gamesofthrones">
+            <img src="assets/img/ned2.jpg" class="img-responsive" alt="gamesofthrones">
                 <div class="overlay">
                   <h2>Share</h2>
                     <p class="set1">
@@ -454,7 +548,6 @@
         <p class="text-justify disclaim"><strong>Disclaimer</strong>: No copyright infringement is intended. This is only for educational purposes and not for profit. Some asset/s used are not owned by the developer/s unless otherwise stated; the credit goes to the owner.</p>
       </div> 
 </div> <!-- /footer -->
-
 
 <!-- bootstrap requires jquery -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
